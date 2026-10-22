@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: vazir, sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;   
+}
+
+@font-face {
+    font-family: vazir;
+    src: url('../Fonts/Vazir.ttf');
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style-type: none;
+}

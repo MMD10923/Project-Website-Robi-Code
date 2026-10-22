@@ -1,0 +1,455 @@
+:root {
+    --primary-color: #f09d03;
+    --primery-color-dark: #f08000;
+    --primery-color-white: #fff;
+}
+
+span {
+    color: var(--primery-color-dark);
+}
+
+/*==================== Start Header Styles ====================*/
+#header {
+    background-color: var(--primery-color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem;
+    border-bottom: 2px solid var(--primary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/*=== Media Phone Respansive Header ===*/
+@media screen and (min-width: 650px) {
+    #header {
+        justify-content: space-around;
+    }
+}
+
+/*=== Styles Flex Navbar Links ===*/
+#header .navbar-header .box-links-header {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+#header .navbar-header .box-links-header .links-header {
+    color: black;
+    font-weight: bolder;
+    transition: all 0.2s;
+}
+
+#header .navbar-header .box-links-header .links-header:hover {
+    color: var(--primary-color);
+}
+
+/*=== Styles Icon Burger ===*/
+#header .icon-burger-header {
+    display: none;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/*=== Media Phone Respansive Navbar Header ===*/
+@media screen and (max-width: 597px) {
+    html {
+        font-size: 80%;
+    }
+
+    #header .logo-header {
+        display: none;
+    }
+
+    #header .navbar-header {
+        display: none;
+    }
+
+    #header .icon-burger-header {
+        display: block;
+    }
+}
+
+/*=== Styles Flex SingUp / Login ===*/
+#header .flex-link-header {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+#header .btn-login {
+    background-color: var(--primery-color-white);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+#header .btn-login:hover {
+    background-color: var(--primary-color);
+    color: var(--primery-color-white);
+}
+
+#header .btn-singup {
+    background-color: var(--primary-color);
+    color: var(--primery-color-white);
+    padding: 0.4rem 1.1rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+#header .btn-singup:hover {
+    background-color: var(--primery-color-dark);
+}
+
+/*==================== Start Text Body Styles ====================*/
+.contact-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/*=== Container Text,Link Body ===*/
+.contact-text .box-text-links {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.6rem;
+    line-height: 33px;
+}
+
+/*=== Media Phone Respansive Text,img Body ===*/
+@media screen and (max-width: 567px) {
+    .contact-text .box-text-links {
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact-text .box-text-links {
+        align-items: flex-start;
+    }
+}
+
+/*==== Styles Title Body ====*/
+.contact-text .box-text-links .title-body {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.contact-text .box-text-links .link-start {
+    margin-top: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--primery-color-white);
+    padding: 0.4rem 1.1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.contact-text .box-text-links .link-start:hover {
+    background-color: var(--primery-color-dark);
+}
+
+/*=== Media Phone Respansive Text,img Body ===*/
+@media screen and (max-width: 900px) {
+    .contact-text .image-robi {
+        display: none;
+    }
+}
+
+/*==================== Start Card Text Styles ====================*/
+.section-card {
+    padding: 0 1.7rem;
+}
+
+.section-card .title-card {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+}
+
+/*=== Styles Flex Cards ===*/
+.section-card .flex-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+/*=== Styles Respansive Phone Cards ===*/
+@media screen and (max-width: 576px) {
+    .section-card .box-card-text {
+        margin: 0 auto;
+    }
+}
+
+/*=== Styles Cards ===*/
+.section-card .box-card-text {
+    background-color: var(--primery-color-white);
+    border-radius: 10px;
+    padding: 1.3rem;
+    border: 2px solid var(--primery-color-dark);
+    display: inline-block;
+}
+
+.section-card .box-card-text .flex-icon-text-card {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-right: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.section-card .box-card-text .flex-icon-text-card #icons-card {
+    color: var(--primery-color-dark);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section-card .box-card-text .flex-icon-text-card .title-top-card {
+    font-size: 1.2rem;
+}
+
+/*==================== Start Card Dore Styles ====================*/
+.section-dore .title-dore {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 1.5rem;
+}
+
+.section-dore .flex-dore {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 3rem;
+}
+
+.section-dore .flex-dore .flex-dore-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+}
+
+/*== Styles Contact Dore ==*/
+.section-dore .container-dore {
+    display: inline-block;
+    background-color: var(--primery-color-white);
+    border: 2px solid var(--primery-color-dark);
+    padding: 0.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.section-dore .container-dore:hover {
+    transform: translateY(-10px);
+}
+
+.section-dore .container-dore .image-flex {
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.section-dore .container-dore .title-flex {
+    margin-block: 0.7rem;
+    margin-right: 4px;
+}
+
+.section-dore .container-dore .text-dore {
+    margin-block: 10px;
+    color: gray;
+}
+
+.section-dore .container-dore .link-dore {
+    color: var(--primery-color-white);
+    background-color: var(--primary-color);
+    display: block;
+    text-align: center;
+    padding: 0.3rem 0;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.section-dore .container-dore .link-dore:hover {
+    background-color: var(--primery-color-dark);
+}
+
+/*==================== Start Form SingUp Styles ====================*/
+.section-singup .title-singup {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 1.5rem;
+}
+
+.section-singup .flex-form-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12rem;
+    margin-top: 2rem;
+}
+
+/*=== Respansive Phone Image Robi ===*/
+@media screen and (max-width: 567px) {
+    .section-singup .flex-form-images .image-singup {
+        display: none;
+    }
+}
+
+.section-singup .box-singup {
+    background-color: var(--primery-color-white);
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.section-singup .box-singup .title-form {
+    text-align: center;
+}
+
+.section-singup .box-singup label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: gray;
+    font-weight: bold;
+}
+
+.section-singup .box-singup input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.section-singup .box-singup input:focus {
+    border-color: var(--primary-color);
+}
+
+.section-singup .box-singup button {
+    font-family: vazir, sans-serif;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    color: var(--primery-color-white);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.section-singup .box-singup button:hover {
+    background-color: var(--primery-color-dark);
+}
+
+/*==================== Start About Me Robi Code Styles ====================*/
+.section-about {
+    padding: 1.2rem;
+}
+
+.section-about .title-about {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 1.5rem;
+}
+
+.section-about .container-about-robi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+/*=== Media Respansive Phone Image About Me ===*/
+@media screen and (max-width: 597px) {
+    .section-about .container-about-robi .image-about {
+        display: none;
+    }
+
+    .section-about .box-text-about {
+        text-align: center;
+    }
+}
+
+/*==================== Start Footer Styles ====================*/
+#footer {
+    background-color: #ffa600a1;
+    margin-top: 9rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+#footer .title-footer {
+    margin-bottom: 1rem;
+}
+
+#footer .container-ertebat p {
+    font-weight: bold;
+    color: #353333;
+}
+
+@media screen and (max-width: 567px) {
+    #footer .box-adress {
+        display: none;
+    }
+
+    .text-copy-rigth {
+        font-size: 0.8rem;
+    }
+}
+
+
+#footer .box-icons-footer {
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+#footer .box-link-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .box-link-footer a {
+    color: #353333;
+    font-weight: 600;
+}
+
+.text-copy-rigth {
+    background-color: #f08000de;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem 0;
+}
